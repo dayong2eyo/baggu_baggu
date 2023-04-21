@@ -111,7 +111,7 @@ function App() {
       };
 
       chatRoomEvent.onerror = event => {
-        console.log('error and closed');
+        console.log('error : chatRoomEvent');
         chatRoomEvent.close();
       };
 
@@ -159,7 +159,7 @@ function App() {
       };
 
       chatRoomUpdateEvent.onerror = event => {
-        console.log('closed : 채팅방 변경사항');
+        console.log('error : 채팅방 변경사항');
         chatRoomUpdateEvent.close();
       };
 
@@ -192,7 +192,7 @@ function App() {
 
       // 에러 발생
       notifyEvent.onerror = event => {
-        console.log('closed : notify');
+        console.log('error : notify');
         notifyEvent.close();
       };
 
